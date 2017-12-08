@@ -1,7 +1,7 @@
 #start Tabchi Cli Or Api V5.3 :)
 tabchi = dofile('./funcation.lua')
 --------------------------------
-tabchi_id = tabchi-id
+tabchi_id = 505940665
 ---------------------------------
 json = dofile('./libs/JSON.lua')
 ---------------------------------
