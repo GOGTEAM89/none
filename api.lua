@@ -8,10 +8,10 @@ serpent = (loadfile "./libs/serpent.lua")()
 -------------------------------
 database = dofile('./libs/redis.lua')
 -------------------------------
-api_id = 406039147
+api_id = 434492955
 local base_api = "https://maps.googleapis.com/maps/api"
 
-config_sudo = {366831302}
+config_sudo = {249189972}
 -------------------------------
 function is_fulsudo(msg)
   local var = false
