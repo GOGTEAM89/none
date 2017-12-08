@@ -4,7 +4,7 @@
 
 cd $HOME/TabLiqGar
 
-token="token" #Token Your Bot api
+token="434492955:AAFmAAkjrUjlPLtG_NipfWJVkEJQ2PRh7aE" #Token Your Bot api
 
 function print_logo() {
 
