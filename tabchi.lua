@@ -226,7 +226,7 @@ end
  local savecontact = (datebase:get('savecontact'..tabchi_id..'id') or 'no') 
     if savecontact == 'yes' then
  if msg.content_.ID == "MessageContact" then
-	  tabchi.importContacts(msg.content_.contact_.phone_number_, (msg.content_.contact_.first_name_ or '--'), '#CerNer Team', msg.content_.contact_.user_id_)
+	  tabchi.importContacts(msg.content_.contact_.phone_number_, (msg.content_.contact_.first_name_ or '--'), '#BeaT Team', msg.content_.contact_.user_id_)
         print("ConTact Added")
 local function c(a,b,c) 
   tabchi.sendContact(msg.chat_id_, msg.id_, 0, 1, nil, b.phone_number_, b.first_name_, (b.last_name_ or ''), 0)
@@ -342,7 +342,7 @@ local hash =  "tplus"..tabchi_id.."id"
           for k,v in pairs(list) do
           t = t..k.." - "..v.." \n" 
           end
-          t = t..'\n@CerNer_Tm\n@TabLiq_Gar_bot'
+          t = t..'\n@BeatTeam\n@Mohammad_hidden_bot'
           if #list == 0 then
           t = 'List Of Empty'
           end
@@ -462,7 +462,8 @@ local gp = datebase:scard("tgp"..tabchi_id.."id") or 0
 local block = datebase:scard("tblock"..tabchi_id.."id") or 0
 local allmsg = datebase:get("tallmsg"..tabchi_id.."id") or 0
 local link = datebase:scard("links"..tabchi_id.."id") or 0 
-local text = '> Stats For Tabchi Bot : \n\n> `All Msg :` *'..allmsg..'*\n\n`> All Groups :`*'..alls..'*\n\n`> SuperGroup  :`* '..gps..'*\n\n> `Contact :`*'..com..'*\n\n`> Group  :` *'..gp..'*`\n\n> Total Links :` *'..link..'*`\n\n> Blocked :` *'..block..'*\n\n> `Create By` *CerNer Team*\nTabLiqGar V5.6'
+local text = '> Stats For Tabchi Bot : \n\n> `All Msg :` *'..allmsg..'*\n\n`> All Groups :`*'..alls..'*\n\n`> SuperGroup  :`* '..gps..'*\n\n> `Contact :`*'..com..'*\n\n`> Group  :` *'..gp..'*`\n\n> Total Links :` *'..link..'*`\n\n> Blocked :` *'..block..'*\n\n> `Create By` *BeatTeam Team*\n
+		V5.6'
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
  if text == 'settings' then
@@ -501,7 +502,7 @@ end
               addtoall = 'Disable'
             end
 
-   tabchi.sendText(msg.chat_id_, msg.id_, 1, '>* Settings For Tabchi Bot :*\n\n> Add left  : *'..coh..'*\n\n> Auto AddToall : *'..addtoall..'*\n\n> Pm  : *'..pm..'*\n\n> Save Contact : *'..co..'*\n\n> Auto Join : *'..join..'*\n\n> Action : *'..AC..'*\n\n> Auto Leave : *'..LE..'*\n\n> Auto Left : > SuperGroup : *350* > Groups : *250*\n\n`Create By` *CerNer Team*\nTabLiqGar V5.6', 1, 'md')
+   tabchi.sendText(msg.chat_id_, msg.id_, 1, '>* Settings For Tabchi Bot :*\n\n> Add left  : *'..coh..'*\n\n> Auto AddToall : *'..addtoall..'*\n\n> Pm  : *'..pm..'*\n\n> Save Contact : *'..co..'*\n\n> Auto Join : *'..join..'*\n\n> Action : *'..AC..'*\n\n> Auto Leave : *'..LE..'*\n\n> Auto Left : > SuperGroup : *350* > Groups : *250*\n\n`Create By` *Beat Team*\nTabLiqGar V5.6', 1, 'md')
         print("Tabchi [ Message ]")
 
 end
@@ -754,7 +755,7 @@ local hash =  'tgp'..tabchi_id..'id'
           for k,v in pairs(list) do
           t = t..k.." `"..v.." `\n" 
           end
-          t = t..'\nCerNer Team'
+          t = t..'\nBeat Team'
           if #list == 0 then
           t = '*No Gp*'
           end
